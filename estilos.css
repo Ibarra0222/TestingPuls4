@@ -10,7 +10,7 @@ header{
 	color:#fff;
 	padding:.5em;
 	position:relative;
-
+	z-index:10;
 }
 header .logo{
 	border-right:1px solid #22bce0;
@@ -100,4 +100,79 @@ nav .menu li a{
 }
 nav .menu li a:hover{
 	background:rgba(0,0,0,0.1)
+}
+
+.posts{
+	padding:.5em;
+}
+.posts .post{
+	background-color: #fff;
+	border-radius: 0 0 .5em .5em;
+	color:#444;
+	margin-bottom: .5em;
+}
+.posts .post .acciones{
+	border-top:2px solid #22bce0;
+	height: 15px;
+	padding: .5em;
+}
+
+.posts .post .acciones .datos{
+	float:right;
+}
+.posts .post .acciones .datos .comentarios{
+	background-color: #444;
+	border-radius: 3px;
+	color: #fff;
+	margin-right: 1em;
+	padding: .2em .5em;
+	text-decoration:  none;
+}
+.posts .post .acciones .votos{
+	float:left;
+}
+
+.posts .post .acciones .votos .up, 
+.posts .post .acciones .votos .down{
+	text-decoration: none;
+}
+.posts .post .acciones .votos .down{
+	color:#f00;
+}
+.posts .post .acciones .votos .up{
+	color:#0f0;
+}
+
+
+.posts .post .descripcion .detalles{
+	height: 160px;
+	margin-left:130px;
+}
+.posts .post .descripcion .detalles .fecha{
+	float: right;
+	margin-right: 1.5em;
+}
+.posts .post .descripcion .detalles .tag{
+	background: #22bce0;
+	border-radius: .5em;
+	color:#fff;
+	padding: .2em .5em;
+	text-decoration: none;
+}
+.posts .post .descripcion .detalles .titulo{
+	color:#444;
+	font-size: 20px;
+	font-style: italic;
+	margin: 0;
+	padding: .2em 0;
+}
+.posts .post .descripcion .imagen{
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+.posts .post .descripcion .imagen img{
+	height: 160px;
+	vertical-align: top;
+	width: 120px;
 }
