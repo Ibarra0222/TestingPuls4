@@ -1,11 +1,25 @@
 azul = #22BCE0
 gris_oscuro = #444
 naranja = #dd4f24
+amarillo = #fcb92d
+
 body
 	background #e8e8e8
 	color gris_oscuro
 	font-family Arial
 	font-size 16px
+
+footer
+	background naranja
+	color rgba(255,255,255,0.5)
+	text-align center
+	width 100%
+
+	strong
+		display block
+
+	.poweredby:before, .poweredby:after 
+		content " - "
 
 header
 	background gris_oscuro
@@ -13,7 +27,7 @@ header
 	color white
 	padding 0.5em
 	position relative
-
+	z-index 10
 	.logo
 		border-right 1px solid azul
 		float left
@@ -39,6 +53,12 @@ header
 			padding .2em .5em
 			text-style italic
 			text-decoration none
+
+		.titulo
+			font-size 18px
+			font-weight normal
+			margin 0
+			padding 0
 
 	.usuario
 		position absolute
@@ -77,11 +97,17 @@ nav
 		position absolute
 		top 0
 	
+	.menu::-webkit-scrollbars
+		display none
+		
 	.menu
 		height 40px
 		line-height 40px
 		margin 0
+		overflow-x auto
 		padding 0
+		white-space nowrap
+
 
 		li
 			display inline-block
@@ -108,9 +134,24 @@ nav
 		.acciones
 			border-top 3px solid azul
 			padding .5em
+			height 20px
 			
 			.datos
 				float right
+
+				.comentarios
+					background gris_oscuro
+					border-radius 0.3em
+					color #fff
+					margin-right .5em
+					padding .2em .5em
+					text-decoration none
+
+				.favorito
+					color amarillo
+					font-size 1.2em
+					margin-right .5em
+					text-decoration none
 
 			.votos
 				float left
@@ -147,6 +188,8 @@ nav
 
 			.imagen
 				float left
+				margin 0
+				padding 0
 
 				img
 					height 160px
